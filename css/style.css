@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: OpenSans;
+}
+
+:root {
+    --color-accent: #149B2E;
+    --color-yellow: #FDCC00;
+    --color-black: #1A171B;
+    --color-white: #ddd;
+}
+
+section {
+    margin: 0 10vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/road.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+header section nav,
+.logo {
+    position: relative;
+}
+
+header section nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2vh;
+}
+
+header section nav .logo {
+    width: 120px;
+    height: 120px;
+}
+
+header section nav .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+header section nav ul {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+header section nav ul li>a {
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+    transition: .3s;
+}
+
+header section nav ul li>a:hover,
+header section nav ul li>a:focus {
+    color: var(--color-accent);
+    transition: .3s;
+}
+
+header section .header_main {
+    position: relative;
+    padding-top: 25vh;
+    text-align: center;
+}
+
+header section .header_main h1,
+header section .header_main h2,
+header section .header_main>.button>a {
+    color: var(--color-white);
+}
+
+header section .header_main h1 {
+    text-transform: uppercase;
+    font-size: 540%;
+}
+
+header section .header_main h2 {
+    font-size: 200%;
+}
+
+header section .header_main>.button {
+    padding-top: 5vh;
+}
+
+header section .header_main>.button>a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 150%;
+    border: 2px solid var(--color-white);
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+header section .header_main>.button>a:hover,
+header section .header_main>.button>a:focus {
+    color: var(--color-accent);
+    border: 2px solid var(--color-yellow);
+    transition: .3s;
+}
+
+main section .confidence {
+    padding-top: 10vh;
+}
+
+main section .confidence h2 {
+    text-transform: uppercase;
+    font-size: 300%;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+main section .confidence h2 span {
+    color: var(--color-accent);
+}
+
+main section .confidence .achivment_block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+
+
+main section .confidence .achivment_block .achivment .icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+main section .confidence .achivment_block .achivment .icon i {
+    border: 2px solid var(--color-yellow);
+    border-radius: 50%;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 300%;
+    color: var(--color-accent);
+    transition: .3s;
+
+}
+
+
+main section .confidence .achivment_block .achivment .icon i:hover,
+main section .confidence .achivment_block .achivment .icon i:focus {
+    background-color: var(--color-accent);
+    color: var(--color-yellow);
+    transition: .3s;
+    border: 0;
+}
+
+main section .confidence .achivment_block .achivment .text_icon {
+    padding-top: 2vh;
+}
+
+main section .confidence .achivment_block .achivment .text_icon h3 {
+    font-size: 160%;
+}
+
+main>#auto {
+    margin: 0;
+    margin-top: 10vh;
+    padding-top: 10vh;
+    background-color: var(--color-yellow);
+}
+
+main>#auto h2{
+    text-transform: uppercase;
+    font-size: 300%;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+main>#auto h2 > span{
+    color: var(--color-accent);
+}
+
+main>#auto>form.search_auto {
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    margin: 0 10vw;
+    padding-top: 5vh;
+}
+
+main >#auto >form.search_auto .checxbox{
+    grid-column: 1/5;
+}
+
+main >#auto >form.search_auto .checxbox h3{
+    font-size: 240%;
+}
+
+main >#auto >form.search_auto .checxbox > input{
+    width: 15px;
+    height: 15px;
+}
+main >#auto >form.search_auto .checxbox > label{
+    font-size: 130%;
+    font-weight: bold;
+    margin: 0px 50px 0px 0px;
+}
+
+main >#auto >form.search_auto .auto_class{
+    display: grid;
+    row-gap: 5px;
+    grid-column: 5/10;
+}
+
+main >#auto >form.search_auto .auto_class .mark_auto > select,
+main >#auto >form.search_auto .auto_class .model_auto > select{
+    width: 100%;
+    font-size: 150%;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid var(--color-accent);
+}
+
+main >#auto >form.search_auto .auto_class .mark_auto > select option:hover
+main >#auto >form.search_auto .auto_class .model_auto > select  option:focus{
+    outline: 0;
+    box-shadow: 0px 1px 28px 6px rgba(34, 60, 80, 0.2);
+}
+
